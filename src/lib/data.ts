@@ -1,4 +1,4 @@
-import type { FashionItem } from './types';
+import type { FashionItem, FashionEvent } from './types';
 
 const fashionItems: FashionItem[] = [
   {
@@ -83,8 +83,37 @@ const fashionItems: FashionItem[] = [
   },
 ];
 
+const fashionEvents: FashionEvent[] = [
+  {
+    id: '1',
+    name: 'Lagos Fashion Week',
+    date: 'October 26-29, 2024',
+    location: 'Federal Palace Hotel, Lagos',
+    image: 'https://placehold.co/600x400',
+    hint: 'fashion show',
+  },
+  {
+    id: '2',
+    name: 'GTCO Fashion Weekend',
+    date: 'November 11-12, 2024',
+    location: 'GTCentre, Lagos',
+    image: 'https://placehold.co/600x400',
+    hint: 'fashion event',
+  },
+  {
+    id: '3',
+    name: 'Arise Fashion Week',
+    date: 'December 5-7, 2024',
+    location: 'Eko Hotel, Lagos',
+    image: 'https://placehold.co/600x400',
+    hint: 'models posing',
+  },
+];
+
 export const getFashionItems = () => fashionItems;
 
 export const getFashionItemById = (id: string) => {
   return fashionItems.find((item) => item.id === id);
 };
+
+export const getFashionEvents = () => fashionEvents;

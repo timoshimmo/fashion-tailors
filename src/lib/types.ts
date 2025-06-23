@@ -8,3 +8,12 @@ export type FashionItem = {
   description: string;
   hint: string;
 };
+
+export type FashionEvent = {
+  id: string;
+  name: string;
+  date: string;
+  location: string;
+  image: string;
+  hint: string;
+};
