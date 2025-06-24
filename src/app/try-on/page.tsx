@@ -40,7 +40,7 @@ function NoItemSelected() {
         </CardHeader>
         <CardContent>
           <Button asChild>
-            <Link href="/">Browse Fashion Items</Link>
+            <Link href="/home">Browse Fashion Items</Link>
           </Button>
         </CardContent>
       </Card>
