@@ -2,13 +2,13 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, ScanLine, User } from 'lucide-react';
+import { Home, ScanLine, Shirt } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navItems = [
   { href: '/', label: 'Home', icon: Home },
   { href: '/measure', label: 'Measure', icon: ScanLine },
-  { href: '#', label: 'Profile', icon: User }, // Placeholder
+  { href: '/try-on', label: 'Try On', icon: Shirt },
 ];
 
 export function BottomNav() {
