@@ -28,3 +28,12 @@ export type Transaction = {
   image: string;
   hint: string;
 };
+
+export type TryOnHistoryItem = {
+  id: string;
+  garmentName: string;
+  garmentImage: string;
+  garmentHint: string;
+  generatedImage: string;
+  date: string;
+};

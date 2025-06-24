@@ -1,4 +1,4 @@
-import type { FashionItem, FashionEvent, Transaction } from './types';
+import type { FashionItem, FashionEvent, Transaction, TryOnHistoryItem } from './types';
 
 const fashionItems: FashionItem[] = [
   {
@@ -143,6 +143,26 @@ const transactions: Transaction[] = [
   },
 ];
 
+const tryOnHistory: TryOnHistoryItem[] = [
+  {
+    id: 'tryon1',
+    garmentName: 'Ankara Peplum Dress',
+    garmentImage: 'https://placehold.co/400x600',
+    garmentHint: 'ankara dress',
+    generatedImage: 'https://placehold.co/400x400',
+    date: '2024-07-21',
+  },
+  {
+    id: 'tryon2',
+    garmentName: 'Senator Style',
+    garmentImage: 'https://placehold.co/400x600',
+    garmentHint: 'man suit',
+    generatedImage: 'https://placehold.co/400x400',
+    date: '2024-07-18',
+  },
+];
+
+
 export const getFashionItems = () => fashionItems;
 
 export const getFashionItemById = (id: string) => {
@@ -152,3 +172,5 @@ export const getFashionItemById = (id: string) => {
 export const getFashionEvents = () => fashionEvents;
 
 export const getTransactions = () => transactions;
+
+export const getTryOnHistory = () => tryOnHistory;

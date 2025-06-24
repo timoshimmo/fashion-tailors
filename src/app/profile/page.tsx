@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
-import { ChevronRight, Ruler, ShoppingBag, Settings, LogOut, User } from 'lucide-react';
+import { ChevronRight, Ruler, ShoppingBag, Settings, LogOut, User, Camera } from 'lucide-react';
 
 export default function ProfilePage() {
   return (
@@ -34,6 +34,7 @@ export default function ProfilePage() {
         <CardContent className="flex flex-col gap-2">
           <ProfileLinkItem icon={Ruler} label="My Measurements" />
           <ProfileLinkItem icon={ShoppingBag} label="Order History" href="/order-history" />
+          <ProfileLinkItem icon={Camera} label="Try-On History" href="/try-on-history" />
           <ProfileLinkItem icon={Settings} label="Settings" />
         </CardContent>
       </Card>
