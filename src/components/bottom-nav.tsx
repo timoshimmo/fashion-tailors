@@ -2,13 +2,12 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, ScanLine, Shirt } from 'lucide-react';
+import { Home, ScanLine } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navItems = [
   { href: '/', label: 'Home', icon: Home },
   { href: '/measure', label: 'Measure', icon: ScanLine },
-  { href: '/try-on', label: 'Try On', icon: Shirt },
 ];
 
 export function BottomNav() {
@@ -16,7 +15,7 @@ export function BottomNav() {
 
   return (
     <footer className="fixed bottom-0 left-0 z-50 w-full h-20 bg-card border-t">
-      <div className="grid h-full max-w-lg grid-cols-3 mx-auto font-medium">
+      <div className="grid h-full max-w-lg grid-cols-2 mx-auto font-medium">
         {navItems.map((item) => {
           const isActive = pathname === item.href;
           return (

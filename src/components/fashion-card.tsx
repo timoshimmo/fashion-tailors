@@ -12,7 +12,7 @@ interface FashionCardProps {
 export function FashionCard({ item }: FashionCardProps) {
   return (
     <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
-      <Link href={`/order/${item.id}`}>
+      <Link href={`/try-on?id=${item.id}`}>
         <div className="relative">
           <Image
             src={item.image}
