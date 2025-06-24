@@ -21,7 +21,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Belleza&display=swap" rel="stylesheet" />
       </head>
-      <body className={cn('font-body antialiased')}>
+      <body className={cn('font-body antialiased')} suppressHydrationWarning={true}>
         <div className="relative flex flex-col min-h-screen w-full">
           <main className="flex-1 pb-24 md:pb-8">
             <div className="container mx-auto max-w-lg px-4 pt-4 sm:px-6 lg:px-8">
