@@ -1,4 +1,5 @@
 
+import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
@@ -32,7 +33,7 @@ export default function ProfilePage() {
         </CardHeader>
         <CardContent className="flex flex-col gap-2">
           <ProfileLinkItem icon={Ruler} label="My Measurements" />
-          <ProfileLinkItem icon={ShoppingBag} label="Order History" />
+          <ProfileLinkItem icon={ShoppingBag} label="Order History" href="/order-history" />
           <ProfileLinkItem icon={Settings} label="Settings" />
         </CardContent>
       </Card>
@@ -45,14 +46,22 @@ export default function ProfilePage() {
   );
 }
 
-function ProfileLinkItem({ icon: Icon, label }: { icon: React.ElementType; label: string }) {
-  return (
-    <button className="flex items-center justify-between w-full p-4 text-left rounded-lg hover:bg-secondary/50 transition-colors">
+function ProfileLinkItem({ icon: Icon, label, href }: { icon: React.ElementType; label: string; href?: string }) {
+  const content = (
+    <>
       <div className="flex items-center gap-4">
         <Icon className="w-5 h-5 text-accent" />
         <span className="text-primary font-medium">{label}</span>
       </div>
       <ChevronRight className="w-5 h-5 text-muted-foreground" />
-    </button>
+    </>
   );
+
+  const className = "flex items-center justify-between w-full p-4 text-left rounded-lg hover:bg-secondary/50 transition-colors";
+
+  if (href) {
+    return <Link href={href} className={className}>{content}</Link>;
+  }
+  
+  return <button className={className}>{content}</button>;
 }

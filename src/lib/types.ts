@@ -17,3 +17,14 @@ export type FashionEvent = {
   image: string;
   hint: string;
 };
+
+export type Transaction = {
+  id: string;
+  itemName: string;
+  designer: string;
+  price: number;
+  date: string;
+  status: 'Delivered' | 'Processing' | 'Cancelled';
+  image: string;
+  hint: string;
+};

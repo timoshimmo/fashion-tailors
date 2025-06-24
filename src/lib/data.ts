@@ -1,4 +1,4 @@
-import type { FashionItem, FashionEvent } from './types';
+import type { FashionItem, FashionEvent, Transaction } from './types';
 
 const fashionItems: FashionItem[] = [
   {
@@ -110,6 +110,39 @@ const fashionEvents: FashionEvent[] = [
   },
 ];
 
+const transactions: Transaction[] = [
+  {
+    id: 'txn1',
+    itemName: 'Lace Bubu Gown',
+    designer: 'Yoruba Elegance',
+    price: 120000,
+    date: '2024-07-15',
+    status: 'Delivered',
+    image: 'https://placehold.co/400x600',
+    hint: 'lace dress',
+  },
+  {
+    id: 'txn2',
+    itemName: 'Asake Agbada',
+    designer: 'Aso Ebi Creations',
+    price: 85000,
+    date: '2024-07-10',
+    status: 'Delivered',
+    image: 'https://placehold.co/400x600',
+    hint: 'nigerian man',
+  },
+    {
+    id: 'txn3',
+    itemName: 'Ankara Peplum Dress',
+    designer: 'Ankara Royalty',
+    price: 38000,
+    date: '2024-07-20',
+    status: 'Processing',
+    image: 'https://placehold.co/400x600',
+    hint: 'ankara dress',
+  },
+];
+
 export const getFashionItems = () => fashionItems;
 
 export const getFashionItemById = (id: string) => {
@@ -117,3 +150,5 @@ export const getFashionItemById = (id: string) => {
 };
 
 export const getFashionEvents = () => fashionEvents;
+
+export const getTransactions = () => transactions;
