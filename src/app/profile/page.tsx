@@ -2,7 +2,7 @@
 
 import { useState, useRef } from 'react';
 import Link from 'next/link';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { ChevronRight, Ruler, ShoppingBag, Settings, LogOut, User, Camera, Pencil, Save } from 'lucide-react';
@@ -48,7 +48,20 @@ export default function ProfilePage() {
         <h1 className="font-headline text-3xl text-primary">Profile</h1>
       </header>
 
-      <Card>
+      <Card className="relative">
+        <div className="absolute top-4 right-4">
+          {isEditing ? (
+            <Button onClick={handleSave} size="icon">
+              <Save />
+              <span className="sr-only">Save Changes</span>
+            </Button>
+          ) : (
+            <Button variant="ghost" size="icon" onClick={() => setIsEditing(true)}>
+              <Pencil />
+              <span className="sr-only">Edit Profile</span>
+            </Button>
+          )}
+        </div>
         <CardContent className="pt-6">
           <div className="flex items-center gap-4">
             <div className="relative group">
@@ -56,12 +69,14 @@ export default function ProfilePage() {
                 <AvatarImage src={avatarPreview || ''} alt="User avatar" data-ai-hint="woman portrait" />
                 <AvatarFallback>{user.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
               </Avatar>
-              <button 
-                onClick={() => avatarInputRef.current?.click()}
-                className="absolute inset-0 bg-black/50 rounded-full flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity"
-              >
-                <Camera className="w-6 h-6" />
-              </button>
+              {isEditing && (
+                <button 
+                  onClick={() => avatarInputRef.current?.click()}
+                  className="absolute inset-0 bg-black/50 rounded-full flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity"
+                >
+                  <Camera className="w-6 h-6" />
+                </button>
+              )}
               <input 
                 type="file" 
                 ref={avatarInputRef} 
@@ -84,19 +99,6 @@ export default function ProfilePage() {
             )}
           </div>
         </CardContent>
-         <CardFooter className="flex justify-end gap-2">
-          {isEditing ? (
-            <Button onClick={handleSave}>
-              <Save className="mr-2" />
-              Save Changes
-            </Button>
-          ) : (
-            <Button variant="outline" onClick={() => setIsEditing(true)}>
-              <Pencil className="mr-2" />
-              Edit Profile
-            </Button>
-          )}
-        </CardFooter>
       </Card>
 
       <Card>
