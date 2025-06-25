@@ -14,7 +14,7 @@ export default function RegisterPage() {
         <Card>
           <CardHeader className="text-center">
             <CardTitle className="font-headline text-4xl text-primary">Create Account</CardTitle>
-            <CardDescription>Join Runway Naija and discover unique fashion.</CardDescription>
+            <CardDescription>Join Vou and discover unique fashion.</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
              <div className="space-y-2">

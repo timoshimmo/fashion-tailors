@@ -9,8 +9,8 @@ export default function HomePage() {
   return (
     <div className="flex flex-col gap-8">
       <header className="text-center">
-        <h1 className="font-headline text-5xl text-primary">Runway Naija</h1>
-        <p className="mt-2 text-muted-foreground">The future of Nigerian fashion.</p>
+        <h1 className="font-headline text-5xl text-primary">Vou</h1>
+        <p className="mt-2 text-muted-foreground">Discover your style.</p>
       </header>
       <FashionEvents events={events} />
       <FashionFeed items={items} />
