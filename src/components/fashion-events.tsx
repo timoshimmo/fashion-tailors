@@ -31,7 +31,7 @@ export function FashionEvents({ events }: FashionEventsProps) {
                   alt={event.name}
                   width={300}
                   height={150}
-                  className="w-full h-[150px] object-cover"
+                  className="w-full h-[150px] object-cover object-top-center"
                   data-ai-hint={event.hint}
                 />
                 <CardContent className="p-4">

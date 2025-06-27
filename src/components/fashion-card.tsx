@@ -33,9 +33,9 @@ export function FashionCard({ item }: FashionCardProps) {
         <CardContent className="p-3">
           <h3 className="font-headline text-lg truncate text-primary">{item.name}</h3>
           <p className="text-sm text-muted-foreground truncate">{item.designer}</p>
-          <p className="font-bold mt-1 text-foreground">
+          {/*<p className="font-bold mt-1 text-foreground">
             ₦{item.price.toLocaleString()}
-          </p>
+          </p>*/}
         </CardContent>
       </Link>
     </Card>
