@@ -6,15 +6,23 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { UserPlus } from 'lucide-react';
+import Image from 'next/image';
 
 export default function RegisterPage() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-background">
        <div className="w-full max-w-md p-4">
+         <div className="relative mb-5">
+              <Image
+                src="/img/icon/vou_icon.png"
+                alt="Logo"
+                className="w-full h-[80px] object-contain"
+              />
+          </div>
         <Card>
           <CardHeader className="text-center">
-            <CardTitle className="font-headline text-4xl text-primary">Create Account</CardTitle>
-            <CardDescription>Join Vou and discover unique fashion.</CardDescription>
+            <CardTitle className="font-headline text-lg text-primary">Join us and discover unique fashion</CardTitle>
+            {/* <CardDescription>Join Vou and discover unique fashion.</CardDescription> */}
           </CardHeader>
           <CardContent className="space-y-4">
              <div className="space-y-2">

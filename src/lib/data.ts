@@ -158,7 +158,7 @@ const transactions: Transaction[] = [
     price: 120000,
     date: '2024-07-15',
     status: 'Delivered',
-    image: 'https://placehold.co/400x600',
+    image: '/img/designs/male_style_3.jpg',
     hint: 'lace dress',
   },
   {
@@ -168,7 +168,7 @@ const transactions: Transaction[] = [
     price: 85000,
     date: '2024-07-10',
     status: 'Delivered',
-    image: 'https://placehold.co/400x600',
+    image: '/img/designs/female_style_10.jpg',
     hint: 'nigerian man',
   },
     {
@@ -178,7 +178,7 @@ const transactions: Transaction[] = [
     price: 38000,
     date: '2024-07-20',
     status: 'Processing',
-    image: 'https://placehold.co/400x600',
+    image: '/img/designs/female_style_11.jpg',
     hint: 'ankara dress',
   },
 ];
@@ -186,18 +186,18 @@ const transactions: Transaction[] = [
 const tryOnHistory: TryOnHistoryItem[] = [
   {
     id: 'tryon1',
-    garmentName: 'Ankara Peplum Dress',
-    garmentImage: 'https://placehold.co/400x600',
-    garmentHint: 'ankara dress',
-    generatedImage: 'https://placehold.co/400x400',
+    garmentName: 'Lace Bubu Gown',
+    garmentImage: '/img/designs/female_style_10.jpg',
+    garmentHint: 'lace bubu gown',
+    generatedImage: '/img/designs/tryon_style_2.png',
     date: '2024-07-21',
   },
   {
     id: 'tryon2',
     garmentName: 'Senator Style',
-    garmentImage: 'https://placehold.co/400x600',
-    garmentHint: 'man suit',
-    generatedImage: 'https://placehold.co/400x400',
+    garmentImage: '/img/designs/male_style_3.jpg',
+    garmentHint: 'senator style',
+    generatedImage: '/img/designs/tryon_style_1.png',
     date: '2024-07-18',
   },
 ];
