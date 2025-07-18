@@ -14,6 +14,8 @@ export default function HomePage() {
               <Image
                 src="/img/icon/vou_icon.png"
                 alt="Logo"
+                width={200}
+                height={60}
                 className="w-full h-[60px] object-contain"
               />
           </div>

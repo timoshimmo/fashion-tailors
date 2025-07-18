@@ -16,6 +16,8 @@ export default function LoginPage() {
               <Image
                 src="/img/icon/vou_icon.png"
                 alt="Logo"
+                width={200}
+                height={80}
                 className="w-full h-[80px] object-contain"
               />
           </div>
