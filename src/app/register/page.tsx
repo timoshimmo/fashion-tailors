@@ -5,7 +5,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { UserPlus } from 'lucide-react';
 import Image from 'next/image';
 
 export default function RegisterPage() {
@@ -41,9 +40,8 @@ export default function RegisterPage() {
             </div>
           </CardContent>
           <CardFooter className="flex flex-col gap-4">
-             <Button asChild className="w-full bg-accent hover:bg-accent/90">
+             <Button asChild className="w-full bg-accent hover:bg-accent/90 h-[50px]">
               <Link href="/home">
-                <UserPlus className="mr-2" />
                 Register
               </Link>
             </Button>
