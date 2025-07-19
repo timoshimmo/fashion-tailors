@@ -40,7 +40,7 @@ export default function LoginPage() {
           </CardContent>
           <CardFooter className="flex flex-col gap-4">
             <Button asChild className="w-full bg-accent hover:bg-accent/90 h-[50px]">
-              <Link href="/auth-success">
+              <Link href="/home">
                 Log In
               </Link>
             </Button>
