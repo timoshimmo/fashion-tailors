@@ -40,8 +40,8 @@ export default function RegisterPage() {
             </div>
           </CardContent>
           <CardFooter className="flex flex-col gap-4">
-             <Button asChild className="w-full bg-accent hover:bg-accent/90 h-[50px]">
-              <Link href="/login">
+             <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground h-[50px]">
+              <Link href="/auth-success">
                 Register
               </Link>
             </Button>

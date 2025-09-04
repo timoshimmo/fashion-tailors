@@ -30,7 +30,7 @@ export default function AuthSuccessPage() {
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground mb-6">You have been successfully authenticated. Welcome to Vou!</p>
-            <Button asChild className="w-full bg-accent hover:bg-accent/90 h-[50px]">
+            <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground h-[50px]">
               <Link href="/home">
                 Continue to Home
               </Link>
