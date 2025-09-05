@@ -16,7 +16,7 @@
     --secondary-foreground: 270 41% 30%;
     --muted: 270 40% 90%;
     --muted-foreground: 270 40% 40%;
-    --accent: 45 80% 55%;
+    --accent: 45 76% 51%;
     --accent-foreground: 270 40% 10%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -55,6 +55,6 @@
   }
   body {
     @apply text-foreground;
-    background: radial-gradient(circle, #8b1c5e 0%, #141021 100%);
+    background: radial-gradient(circle at 50% 50%, #8b1c5e 0%, #141021 100%);
   }
 }
