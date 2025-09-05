@@ -12,6 +12,7 @@ export default {
       fontFamily: {
         body: ['Poppins', 'sans-serif'],
         headline: ['Poppins', 'sans-serif'],
+        subtitle: ['Great Vibes', 'cursive'],
         code: ['monospace'],
       },
       colors: {

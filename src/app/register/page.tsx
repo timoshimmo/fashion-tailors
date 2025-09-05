@@ -9,9 +9,9 @@ import Image from 'next/image';
 
 export default function RegisterPage() {
   return (
-    <div className="flex items-center justify-center min-h-screen">
-       <div className="w-full max-w-md p-4">
-         <div className="relative mb-5">
+    <div className="flex flex-col items-center justify-center min-h-screen px-4">
+       <div className="w-full max-w-md">
+         <div className="relative mb-2 text-center">
               <Image
                 src="/img/icon/vou_icon.png"
                 alt="Logo"
@@ -19,35 +19,35 @@ export default function RegisterPage() {
                 height={80}
                 className="w-full h-[80px] object-contain"
               />
+              <p className="font-subtitle text-2xl text-accent -mt-4">The Bespoke Revolution</p>
           </div>
-        <Card>
+        <Card className="bg-transparent border-none shadow-none">
           <CardHeader className="text-center">
-            <CardTitle className="font-headline text-lg text-primary">Join us and discover unique fashion</CardTitle>
-            {/* <CardDescription>Join Vou and discover unique fashion.</CardDescription> */}
+            <CardTitle className="font-headline text-lg text-primary sr-only">Join us and discover unique fashion</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
              <div className="space-y-2">
-              <Label htmlFor="name">Full Name</Label>
-              <Input id="name" type="text" placeholder="Chioma Nwosu" required />
+              <Label htmlFor="name" className="sr-only">Full Name</Label>
+              <Input id="name" type="text" placeholder="Full Name" required className="bg-primary/20 border-accent text-white placeholder:text-gray-300"/>
             </div>
             <div className="space-y-2">
-              <Label htmlFor="email">Email</Label>
-              <Input id="email" type="email" placeholder="you@example.com" required />
+              <Label htmlFor="email" className="sr-only">Email</Label>
+              <Input id="email" type="email" placeholder="Email" required className="bg-primary/20 border-accent text-white placeholder:text-gray-300"/>
             </div>
             <div className="space-y-2">
-              <Label htmlFor="password">Password</Label>
-              <Input id="password" type="password" required />
+              <Label htmlFor="password" className="sr-only">Password</Label>
+              <Input id="password" type="password" placeholder="Password" required className="bg-primary/20 border-accent text-white placeholder:text-gray-300"/>
             </div>
           </CardContent>
-          <CardFooter className="flex flex-col gap-4">
-             <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground h-[50px]">
+          <CardFooter className="flex flex-col gap-4 pt-4">
+             <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground h-[50px] text-lg font-bold">
               <Link href="/auth-success">
                 Register
               </Link>
             </Button>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground mt-4">
               Already have an account?{' '}
-              <Link href="/" className="font-semibold text-primary hover:underline">
+              <Link href="/" className="font-semibold text-accent hover:underline">
                 Log In
               </Link>
             </p>
