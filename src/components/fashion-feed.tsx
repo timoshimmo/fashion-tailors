@@ -1,37 +1,47 @@
 'use client';
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { FashionCard } from './fashion-card';
+import Image from 'next/image';
+import { Separator } from '@/components/ui/separator';
 import type { FashionItem } from '@/lib/types';
 
 interface FashionFeedProps {
   items: FashionItem[];
 }
 
-export function FashionFeed({ items }: FashionFeedProps) {
-  const femaleItems = items.filter((item) => item.category === 'female');
-  const maleItems = items.filter((item) => item.category === 'male');
+const styleCategories = [
+    { name: 'A-Line', image: '/img/designs/female_style_3.jpg', hint: 'a-line dress' },
+    { name: 'Corset', image: '/img/designs/female_style_9.jpg', hint: 'corset dress' },
+    { name: 'Two-Piece', image: '/img/designs/female_style_10.jpg', hint: 'two piece outfit' },
+    { name: 'Jumpsuit', image: '/img/designs/female_style_11.jpg', hint: 'jumpsuit fashion' },
+]
 
+export function FashionFeed({ items }: FashionFeedProps) {
   return (
-    <Tabs defaultValue="for-her" className="w-full">
-      <TabsList className="grid w-full grid-cols-2 bg-secondary/50">
-        <TabsTrigger value="for-her">For Her</TabsTrigger>
-        <TabsTrigger value="for-him">For Him</TabsTrigger>
-      </TabsList>
-      <TabsContent value="for-her">
-        <div className="grid grid-cols-2 gap-4 mt-4">
-          {femaleItems.map((item) => (
-            <FashionCard key={item.id} item={item} />
-          ))}
+    <div className="space-y-4">
+        <div className="space-y-1">
+            <h2 className="font-headline text-2xl text-primary">Shop by Style</h2>
+            <p className="text-sm text-muted-foreground">
+                Find the perfect style for any occasion.
+            </p>
         </div>
-      </TabsContent>
-      <TabsContent value="for-him">
-        <div className="grid grid-cols-2 gap-4 mt-4">
-          {maleItems.map((item) => (
-            <FashionCard key={item.id} item={item} />
-          ))}
+        <Separator />
+        <div className="grid grid-cols-4 gap-4 text-center">
+            {styleCategories.map(category => (
+                 <div key={category.name} className="flex flex-col items-center gap-2">
+                    <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-primary/50 shadow-md">
+                        <Image
+                            src={category.image}
+                            alt={category.name}
+                            width={80}
+                            height={80}
+                            className="w-full h-full object-cover"
+                            data-ai-hint={category.hint}
+                        />
+                    </div>
+                    <p className="text-sm font-medium text-primary">{category.name}</p>
+                 </div>
+            ))}
         </div>
-      </TabsContent>
-    </Tabs>
+    </div>
   );
 }
