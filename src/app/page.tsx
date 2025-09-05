@@ -19,7 +19,7 @@ export default function LoginPage() {
                 height={80}
                 className="w-full h-[80px] object-contain"
               />
-              <p className="font-subtitle text-2xl text-accent -mt-2">The Bespoke Revolution</p>
+              <p className="font-subtitle text-2xl text-accent mt-2">The Bespoke Revolution</p>
           </div>
         <Card className="bg-transparent border-none shadow-none">
           <CardHeader className="text-center">
@@ -38,7 +38,7 @@ export default function LoginPage() {
             </div>
           </CardContent>
           <CardFooter className="flex flex-col gap-4 pt-4">
-            <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground h-[50px] text-lg font-bold">
+            <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground h-[60px] text-lg font-bold">
               <Link href="/auth-success">
                 Log In
               </Link>
