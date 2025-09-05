@@ -55,6 +55,6 @@
   }
   body {
     @apply text-foreground;
-    background: radial-gradient(circle, #8b1c5e 0%, #141021 100%);
+    background: radial-gradient(circle, #8b1c5e 0%, #141021 70%);
   }
 }
