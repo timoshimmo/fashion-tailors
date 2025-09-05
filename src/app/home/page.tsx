@@ -1,18 +1,14 @@
-import { FashionFeed } from "@/components/fashion-feed";
-import { getFashionItems, getFashionEvents } from "@/lib/data";
-import { FashionEvents } from "@/components/fashion-events";
-import Image from 'next/image';
-import { PromoCard } from "@/components/promo-card";
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 
 export default function HomePage() {
-  const items = getFashionItems();
-  const events = getFashionEvents();
-
   return (
-    <div className="flex flex-col gap-8">
-      <FashionEvents events={events} />
-      <PromoCard />
-      <FashionFeed items={items} />
+    <div className="flex flex-col items-center justify-center min-h-screen text-center">
+      <h1 className="text-4xl font-bold mb-4">Welcome to the App</h1>
+      <p className="mb-8">This is the home page.</p>
+      <Button asChild>
+        <Link href="/">Back to Login</Link>
+      </Button>
     </div>
   );
 }

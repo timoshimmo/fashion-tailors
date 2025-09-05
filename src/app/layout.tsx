@@ -3,9 +3,7 @@
 import { usePathname } from 'next/navigation';
 import './globals.css';
 import { cn } from '@/lib/utils';
-import { BottomNav } from '@/components/bottom-nav';
 import { Toaster } from "@/components/ui/toaster"
-import { AppHeader } from '@/components/app-header';
 
 const SVG_ICON_DATA_URI = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSI4NSIgZmlsbD0iIzU5M0M1OSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTUlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZvbnQtc2l6ZT0iMjU2IiBmaWxsPSIjRTlFM0YzIj5WPC90ZXh0Pjwvc3ZnPg==';
 
@@ -16,7 +14,6 @@ export default function RootLayout({
 }>) {
   const pathname = usePathname();
   const noNavRoutes = ['/', '/register', '/auth-success'];
-  const showNav = !noNavRoutes.includes(pathname);
   const isAuthPage = noNavRoutes.includes(pathname);
 
   return (
@@ -42,13 +39,11 @@ export default function RootLayout({
       </head>
       <body className={cn('font-body antialiased', isAuthPage && 'auth-bg')} suppressHydrationWarning={true}>
         <div className="relative flex flex-col min-h-screen w-full">
-          {showNav && <AppHeader />}
-          <main className={cn("flex-1", showNav && "pb-24 md:pb-8")}>
-            <div className={cn(showNav ? "container mx-auto max-w-lg px-4 pt-4 sm:px-6 lg:px-8" : "h-full")}>
+          <main className={cn("flex-1")}>
+            <div className={cn(isAuthPage ? "h-full" : "container mx-auto max-w-lg px-4 pt-4 sm:px-6 lg:px-8")}>
               {children}
             </div>
           </main>
-          {showNav && <BottomNav />}
         </div>
         <Toaster />
       </body>
