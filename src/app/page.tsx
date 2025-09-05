@@ -19,7 +19,7 @@ export default function LoginPage() {
                 height={80}
                 className="w-full h-[80px] object-contain"
               />
-              <p className="font-subtitle text-2xl text-accent -mt-4">The Bespoke Revolution</p>
+              <p className="font-subtitle text-2xl text-accent -mt-2">The Bespoke Revolution</p>
           </div>
         <Card className="bg-transparent border-none shadow-none">
           <CardHeader className="text-center">
@@ -44,9 +44,9 @@ export default function LoginPage() {
               </Link>
             </Button>
             <p className="text-sm text-muted-foreground mt-4">
-              Don&apos;t have an account?{' '}
+              Don't have an account?{' '}
               <Link href="/register" className="font-semibold text-accent hover:underline">
-                Register
+                Sign Up
               </Link>
             </p>
           </CardFooter>
