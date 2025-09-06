@@ -26,7 +26,7 @@ export function BottomNav() {
               href={item.href}
               className={cn(
                 'inline-flex flex-col items-center justify-center px-5 hover:bg-secondary group',
-                isActive ? 'text-primary' : 'text-muted-foreground'
+                isActive ? 'text-accent' : 'text-muted-foreground'
               )}
             >
               <item.icon className={cn("w-6 h-6 mb-1 transition-transform group-hover:scale-110", isActive && "text-accent")} />
