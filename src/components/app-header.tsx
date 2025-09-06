@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 export function AppHeader() {
     return (
-        <header className="sticky top-0 z-40 w-full bg-primary/95 backdrop-blur-sm">
+        <header className="sticky top-0 z-40 w-full bg-primary">
             <div className="container mx-auto flex h-20 max-w-lg items-center justify-between px-4 sm:px-6 lg:px-8">
                 <Button variant="ghost" size="icon">
                     <Menu className="h-6 w-6 text-primary-foreground" />
