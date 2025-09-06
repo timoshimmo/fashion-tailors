@@ -13,7 +13,7 @@ export default function RegisterPage() {
        <div className="w-full max-w-md">
          <div className="relative mb-2 text-center">
               <Image
-                src="/img/icon/vou_icon.png"
+                src="/img/icon/vou_logo_purple.png"
                 alt="Logo"
                 width={200}
                 height={80}
