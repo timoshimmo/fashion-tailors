@@ -24,10 +24,6 @@ export function AppHeader() {
                     />
                 </Link>
                 <div className="flex items-center gap-2">
-                    <Button variant="ghost" size="icon">
-                        <Search className="h-6 w-6 text-primary-foreground" />
-                        <span className="sr-only">Search</span>
-                    </Button>
                     <Button variant="ghost" size="icon" className="relative">
                         <ShoppingCart className="h-6 w-6 text-primary-foreground" />
                         <span className="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-accent text-xs font-bold text-accent-foreground">1</span>
