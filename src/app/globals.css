@@ -10,10 +10,10 @@
     --card-foreground: 270 40% 10%;
     --popover: 270 50% 100%;
     --popover-foreground: 270 40% 10%;
-    --primary: 270 41% 30%;
+    --primary: 283 38% 20%; /* #3c2046 */
     --primary-foreground: 270 40% 98%;
     --secondary: 270 40% 94%;
-    --secondary-foreground: 270 41% 30%;
+    --secondary-foreground: 283 38% 20%;
     --muted: 270 40% 90%;
     --muted-foreground: 270 40% 40%;
     --accent: 45 76% 51%;
@@ -22,7 +22,7 @@
     --destructive-foreground: 0 0% 98%;
     --border: 270 40% 88%;
     --input: 270 40% 92%;
-    --ring: 270 41% 30%;
+    --ring: 283 38% 20%;
   }
 
   .dark {
