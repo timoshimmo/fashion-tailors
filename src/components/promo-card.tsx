@@ -14,7 +14,7 @@ export function PromoCard() {
                         <span className="text-sm font-medium">98 Days Left!</span>
                     </div>
                 </div>
-                <Button className="bg-accent text-accent-foreground hover:bg-accent/90 shrink-0">
+                <Button className="bg-[linear-gradient(to_bottom,#E6C66E,#B48A34)] text-accent-foreground hover:opacity-90 shrink-0">
                     Start My Prom Design
                 </Button>
             </CardContent>
