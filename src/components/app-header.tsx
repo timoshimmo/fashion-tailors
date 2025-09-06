@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { Menu, Search, ShoppingCart, Bell } from 'lucide-react';
+import { Menu, ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 import Link from 'next/link';
@@ -23,10 +23,10 @@ export function AppHeader() {
                         className="h-10 w-auto object-contain"
                     />
                 </Link>
-                <div className="flex items-center gap-2">
-                    <Button variant="ghost" size="icon" className="relative">
-                        <ShoppingCart className="h-6 w-6 text-primary-foreground" />
-                        <span className="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-accent text-xs font-bold text-accent-foreground">1</span>
+                <div className="flex items-center gap-4">
+                    <Button variant="ghost" size="icon" className="relative h-8 w-8">
+                        <ShoppingCart className="h-7 w-7 text-primary-foreground" />
+                        <span className="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-accent text-xs font-bold text-accent-foreground">1</span>
                         <span className="sr-only">Open cart</span>
                     </Button>
                     <Link href="/profile">
