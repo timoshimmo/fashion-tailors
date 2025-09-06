@@ -4,7 +4,7 @@ import { Card, CardContent } from "./ui/card";
 
 export function PromoCard() {
     return (
-        <Card className="bg-primary text-primary-foreground shadow-lg">
+        <Card className="bg-primary text-primary-foreground shadow-lg rounded-2xl border border-accent/50">
             <CardContent className="p-4 flex items-center justify-between">
                 <div className="space-y-1">
                     <h3 className="font-headline text-lg">Hi Tomiwa!</h3>

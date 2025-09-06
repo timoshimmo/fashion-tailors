@@ -11,8 +11,8 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col gap-6 pb-24">
-      <PromoCard />
       <FashionEvents events={fashionEvents} />
+      <PromoCard />
       <FashionFeed items={fashionItems} />
        <Separator />
       <div>
