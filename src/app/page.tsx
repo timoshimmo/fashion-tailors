@@ -30,15 +30,15 @@ export default function LoginPage() {
           <CardContent className="space-y-4">
             <div className="space-y-2">
               <Label htmlFor="email" className="sr-only">Email</Label>
-              <Input id="email" type="email" placeholder="Email" required className="bg-primary/20 border-accent text-white placeholder:text-gray-300 rounded-[15px]" />
+              <Input id="email" type="email" placeholder="Email" required className="bg-primary/20 border-accent text-white placeholder:text-gray-300 rounded-[20px]" />
             </div>
             <div className="space-y-2">
               <Label htmlFor="password" className="sr-only">Password</Label>
-              <Input id="password" type="password" placeholder="Password" required className="bg-primary/20 border-accent text-white placeholder:text-gray-300 rounded-[15px]" />
+              <Input id="password" type="password" placeholder="Password" required className="bg-primary/20 border-accent text-white placeholder:text-gray-300 rounded-[20px]" />
             </div>
           </CardContent>
           <CardFooter className="flex flex-col gap-4 pt-4">
-            <Button asChild className="w-full text-accent-foreground h-[60px] text-lg font-bold bg-[linear-gradient(to_bottom,#E6C66E,#B48A34)] hover:opacity-90 rounded-[15px]">
+            <Button asChild className="w-full text-accent-foreground h-[60px] text-lg font-bold bg-[linear-gradient(to_bottom,#E6C66E,#B48A34)] hover:opacity-90 rounded-[20px]">
               <Link href="/auth-success">
                 Log In
               </Link>
