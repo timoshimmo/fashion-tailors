@@ -28,19 +28,19 @@ export default function RegisterPage() {
           <CardContent className="space-y-4">
              <div className="space-y-2">
               <Label htmlFor="name" className="sr-only">Full Name</Label>
-              <Input id="name" type="text" placeholder="Full Name" required className="bg-primary/20 border-accent text-white placeholder:text-gray-300 rounded-[20px]"/>
+              <Input id="name" type="text" placeholder="Full Name" required className="bg-primary/20 border-accent text-white placeholder:text-gray-300 rounded-[10px]"/>
             </div>
             <div className="space-y-2">
               <Label htmlFor="email" className="sr-only">Email</Label>
-              <Input id="email" type="email" placeholder="Email" required className="bg-primary/20 border-accent text-white placeholder:text-gray-300 rounded-[20px]"/>
+              <Input id="email" type="email" placeholder="Email" required className="bg-primary/20 border-accent text-white placeholder:text-gray-300 rounded-[10px]"/>
             </div>
             <div className="space-y-2">
               <Label htmlFor="password" className="sr-only">Password</Label>
-              <Input id="password" type="password" placeholder="Password" required className="bg-primary/20 border-accent text-white placeholder:text-gray-300 rounded-[20px]"/>
+              <Input id="password" type="password" placeholder="Password" required className="bg-primary/20 border-accent text-white placeholder:text-gray-300 rounded-[10px]"/>
             </div>
           </CardContent>
           <CardFooter className="flex flex-col gap-4 pt-4">
-             <Button asChild className="w-full text-accent-foreground h-[60px] text-lg font-bold bg-[linear-gradient(to_bottom,#E6C66E,#B48A34)] hover:opacity-90 rounded-[20px]">
+             <Button asChild className="w-full text-accent-foreground h-[60px] text-lg font-bold bg-[linear-gradient(to_bottom,#E6C66E,#B48A34)] hover:opacity-90 rounded-[10px]">
               <Link href="/auth-success">
                 Register
               </Link>
