@@ -19,7 +19,7 @@ export function FashionEvents({ events }: FashionEventsProps) {
       </div>
       <div className="grid grid-cols-3 gap-2">
         {events.map((event) => (
-          <Card key={event.id} className="w-full shrink-0 overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg">
+          <Card key={event.id} className="w-full shrink-0 overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-2xl">
             <Image
               src={event.image}
               alt={event.name}
