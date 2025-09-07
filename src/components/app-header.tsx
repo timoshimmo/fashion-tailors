@@ -5,6 +5,7 @@ import { Menu, ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 import Link from 'next/link';
+import logo from '/public/img/icon/ic_vou_logo.png';
 
 export function AppHeader() {
     return (
@@ -16,11 +17,11 @@ export function AppHeader() {
                 </Button>
                 <Link href="/home">
                     <Image
-                        src="/img/icon/vou_icon_white.png"
+                        src={logo}
                         alt="Logo"
-                        width={100}
-                        height={40}
-                        className="h-10 w-auto object-contain"
+                        width={120}
+                        height={50}
+                        className="w-full h-[50px] object-contain"
                     />
                 </Link>
                 <div className="flex items-center gap-6">

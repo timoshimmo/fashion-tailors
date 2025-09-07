@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { CheckCircle2 } from 'lucide-react';
 import Image from 'next/image';
+import logo from '/public/img/icon/ic_vou_logo.png';
 
 export default function AuthSuccessPage() {
   return (
@@ -12,14 +13,14 @@ export default function AuthSuccessPage() {
       <div className="w-full max-w-md p-4">
         <div className="relative mb-5">
               <Image
-                src="/img/icon/vou_icon.png"
+                src={logo}
                 alt="Logo"
                 width={200}
-                height={80}
-                className="w-full h-[80px] object-contain"
+                height={140}
+                className="w-full h-[140px] object-contain"
               />
           </div>
-        <Card className="text-center">
+        <Card className="text-center mt-5">
           <CardHeader>
             <div className="flex justify-center mb-4">
                 <CheckCircle2 className="w-16 h-16 text-green-500" />
