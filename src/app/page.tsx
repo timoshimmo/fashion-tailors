@@ -18,7 +18,7 @@ export default function LoginPage() {
                 alt="Logo"
                 width={400}
                 height={140}
-                className="w-full h-[140px] object-contain"
+                className="w-full lg:h-[140px] h-[100px] object-contain"
               />
               <p className="font-subtitle text-2xl text-accent mt-5">The Bespoke Revolution</p>
           </div>

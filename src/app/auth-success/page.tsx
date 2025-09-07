@@ -17,7 +17,7 @@ export default function AuthSuccessPage() {
                 alt="Logo"
                 width={200}
                 height={140}
-                className="w-full h-[140px] object-contain"
+                className="w-full lg:h-[140px] h-[100px] object-contain"
               />
           </div>
         <Card className="text-center mt-5">
