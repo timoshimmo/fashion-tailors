@@ -29,7 +29,7 @@ async function toDataURL(url: string): Promise<string> {
 
 function NoItemSelected() {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 pb-24">
       <PageHeader title="Virtual Try-On" />
       <Card className="text-center">
         <CardHeader>
@@ -117,7 +117,7 @@ function TryOnDisplay({ item }: { item: FashionItem }) {
   );
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 pb-24">
        <PageHeader title="Virtual Try-On" />
        <Card>
         <CardHeader>
@@ -196,7 +196,7 @@ export default function TryOnPage() {
 
 function TryOnPageSkeleton() {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 pb-24">
       <PageHeader title="Virtual Try-On" />
       <Card>
         <CardHeader>
