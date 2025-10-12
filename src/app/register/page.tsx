@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import Image from 'next/image';
+import logo from '/public/img/icon/ic_vou_logo.png';
 
 export default function RegisterPage() {
   return (
@@ -13,13 +14,13 @@ export default function RegisterPage() {
        <div className="w-full max-w-md">
          <div className="relative mb-2 text-center">
               <Image
-                src="/img/icon/vou_logo_purple.png"
+                src={logo}
                 alt="Logo"
-                width={200}
-                height={80}
-                className="w-full h-[80px] object-contain"
+                width={400}
+                height={140}
+                className="w-full lg:h-[140px] h-[100px] object-contain"
               />
-              <p className="font-subtitle text-2xl text-accent mt-2">The Bespoke Revolution</p>
+              <p className="font-subtitle text-2xl text-accent mt-5">The Bespoke Revolution</p>
           </div>
         <Card className="bg-transparent border-none shadow-none">
           <CardHeader className="text-center">
